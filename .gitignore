@@ -77,3 +77,8 @@ docs/
 
 # translation temp files
 po/*~
+
+# Stimuli
+
+stimuli_creation/stimuli/final/raw/elise/
+stimuli_creation/stimuli/final/raw/filippo/all/
