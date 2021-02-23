@@ -80,5 +80,7 @@ po/*~
 
 # Stimuli
 
-stimuli_creation/stimuli/final/raw/elise/
-stimuli_creation/stimuli/final/raw/filippo/all/
+stimuli_creation/stimuli/final/elise/
+stimuli_creation/stimuli/raw/elise/
+
+stimuli_creation/stimuli/raw/filippo/all
