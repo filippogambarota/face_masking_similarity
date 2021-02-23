@@ -1,0 +1,18 @@
+<h1 id="image-processing-notes">Image Processing Notes</h1>
+<ul>
+<li><a href="#image-processing-notes">Image Processing Notes</a>
+<ul>
+<li><a href="#1902">19/02</a></li>
+</ul></li>
+</ul>
+<h2 id="section">19/02</h2>
+<p>I have tried different approaches to images matching, mainly using the SHINE Toolbox. There are few considerations:</p>
+<ul>
+<li>The toolbox works well with few images, however <strong>working with &gt; 10 images lead to artifacts</strong></li>
+<li>Using a mask within <code>histMatch</code> function seems the better approach however the Avanaki algorithm do not work (simple solution is to write and reload images)</li>
+</ul>
+<p>In terms of <strong>image distance</strong> I have tried different solutions to compute a dissimilarity matrix based on images histograms. The idea is to correlate this with similarity ratings but in general could be an useful approach to select images that are on average similar (of course in terms of pixels values distribution).</p>
+<ul>
+<li>Important! using the <code>histMatch</code> approach (apsecially the Avanaki approach) the distance based approach is no longer relevant given that images distributions are equated by the algorithm. Other approaches (<code>lumMatch</code>, <code>sfMatch</code>, and standard <code>histMatch</code>) preserves some histograms differences.</li>
+<li><strong>Hausdroff distances</strong> is a different approach that works with <strong>binary images</strong>. In this case the histgram matching should not remove the possibility to compute distances.</li>
+</ul>
